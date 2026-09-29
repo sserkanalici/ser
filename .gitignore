@@ -1,6 +1,6 @@
 # Geçici ve sistem dosyaları
 node_modules/
 *.log
-.env          # gizli anahtarlar
+.env 
 .DS_Store
 __pycache__/
