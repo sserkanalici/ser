@@ -21,6 +21,40 @@
         <dd>Sayfanın görsel stilini tanımlayan dil.</dd>
     </dl>
 
-    
+    <label for="diller">Bildiğiniz Diller:</label>
+    <select id="diller" name="diller[]" multiple size="6">
+        <option value="tr">Türkçe</option>
+        <option value="en">İngilizce</option>
+    </select>
+
+    <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <label for="ad">Ad:</label>
+        <input id="ad" name="ad">
+    </fieldset>
+
+    <fieldset>
+        <legend>Adres Bilgileri</legend>
+        <input name="sehir">
+    </fieldset>
+
+    <form action="#" method="get">
+        <label for="ad">Ad:</label>
+        <input id="ad" name="ad">
+
+        <label for="tel">Telefon (5XX XXX XX XX):</label>
+        <input type="text" id="tel" name="tel"
+        pattern="5[0-9]{9}"
+        title="5 ile başlayan 10 haneli numara girin">
+
+
+        <label for="kullanici">Kullanıcı Adı:</label>
+        <input type="text" id="kullanici" name="kullanici"
+            minlength="4" maxlength="20">
+
+        <input type="submit" value="Gönder">
+
+
+    </form>
 </body>
 </html>
